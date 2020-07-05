@@ -5,7 +5,7 @@ using SFML.Graphics;
 
 namespace CoreSort
 {
-    sealed class InsertionSort : GenericSort, ISort
+    public sealed class InsertionSort : GenericSort, ISort
     {
         public InsertionSort(RenderWindow _window,
                 List<RectangleShape> _shapes,

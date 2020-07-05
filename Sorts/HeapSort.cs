@@ -5,7 +5,7 @@ using SFML.Graphics;
 
 namespace CoreSort
 {
-    sealed class HeapSort : GenericSort, ISort
+    public sealed class HeapSort : GenericSort, ISort
     {
         public HeapSort(RenderWindow _window, 
                         List<RectangleShape> _shapes, 
@@ -24,7 +24,7 @@ namespace CoreSort
 
             int max_child = root * 2 + 1;
 
-            if (max_child<bottom)
+            if (max_child < bottom)
             {
                 if (GetColor(shapes[max_child + 1]) < GetColor(shapes[max_child]))
                     max_child++;

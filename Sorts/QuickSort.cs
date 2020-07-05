@@ -5,7 +5,7 @@ using SFML.Graphics;
 
 namespace CoreSort
 {
-    sealed class QuickSort : GenericSort, ISort
+    public sealed class QuickSort : GenericSort, ISort
     {
         public QuickSort(RenderWindow _window,
                         List<RectangleShape> _shapes,

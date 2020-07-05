@@ -5,17 +5,17 @@ using System.Threading;
 
 namespace CoreSort.Sorts
 {
-    class SortFactory
+    public class SortFactory
     {
-        public static ISort GetRandomSortAlgorithm(RenderWindow _window,
-                                                   List<RectangleShape> _shapes,
-                                                   CancellationToken _cancellationToken)
+        public static ISort GetRandomSortAlgorithm(RenderWindow window,
+                                                   List<RectangleShape> shapes,
+                                                   CancellationToken cancellationToken)
         {
             var listOfAlgorithms = new List<ISort>
             {
-                new HeapSort(_window, _shapes, _cancellationToken),
-                new InsertionSort(_window, _shapes, _cancellationToken),
-                new QuickSort(_window, _shapes, _cancellationToken)
+                new HeapSort(window, shapes, cancellationToken),
+                new InsertionSort(window, shapes, cancellationToken),
+                new QuickSort(window, shapes, cancellationToken)
             };
 
             var rnd = new Random().Next(listOfAlgorithms.Count);

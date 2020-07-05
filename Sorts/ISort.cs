@@ -1,8 +1,6 @@
-﻿using System.Threading;
-
-namespace CoreSort.Sorts
+﻿namespace CoreSort.Sorts
 {
-    interface ISort
+    public interface ISort
     {
         void Sort();
     }

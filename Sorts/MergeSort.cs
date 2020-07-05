@@ -5,7 +5,7 @@ using SFML.Graphics;
 
 namespace CoreSort
 {
-    sealed class MergeSort : GenericSort, ISort
+    public sealed class MergeSort : GenericSort, ISort
     {
         public MergeSort(RenderWindow _window,
                         List<RectangleShape> _shapes,

@@ -4,7 +4,6 @@ using SFML.System;
 using SFML.Window;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -78,7 +77,7 @@ namespace CoreSort
 
         private void CreateWindow(uint width, uint height)
         {
-            window = new RenderWindow(new VideoMode(width, height), "CoreSort");
+            window = new RenderWindow(new VideoMode(width, height), "CoreSort", Styles.Fullscreen);
 
             window.Closed += Window_Closed;
             window.KeyPressed += Window_KeyPressed;

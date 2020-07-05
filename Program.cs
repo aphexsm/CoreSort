@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using CoreSort.Sorts;
-using SFML.Graphics;
-using SFML.System;
-using SFML.Window;
-
-namespace CoreSort
+﻿namespace CoreSort
 {
     class Program
     {

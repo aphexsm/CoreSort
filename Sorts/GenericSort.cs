@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace CoreSort.Sorts
 {
-    class GenericSort : ISort
+    public abstract class GenericSort : ISort
     {
         protected RenderWindow window;
         protected List<RectangleShape> shapes;
